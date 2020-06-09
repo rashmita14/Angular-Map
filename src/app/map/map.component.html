@@ -1,0 +1,34 @@
+<div style="margin:50px;">
+  <div class="alert alert-info"><b>Angular with Map</b></div>
+  <div class="search-container">
+      <input type="text" placeholder="Search.." class="form-control" [(ngModel)]="searchValue">
+      <button (click)="search()"><i class="fa fa-search"></i></button>
+  </div>
+  <div class="table-responsive">
+    <table id="maps" class="table">
+      <thead>
+        <tr>
+          <th>Postal Code</th>
+          <th>Country</th>
+          <th>Logitude</th>
+          <th>Latitude</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let map of maps" class="row-class" (click)="rowClick(map.id)">
+          <td>{{map.postal_code}}</td>
+          <td>{{map.Country}}</td>
+          <td>{{map.logitude}}</td>
+          <td>{{map.latitude}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="display-map">
+      <agm-map [latitude]='latitude' [longitude]='longitude' [zoom]="zoom"
+        [mapTypeId]='mapType'>
+        <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+      </agm-map>
+    </div>
+  </div>
+ 
+</div>

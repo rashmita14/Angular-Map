@@ -1,0 +1,10 @@
+.main-content-inner {
+  flex: 1 1 auto;
+  position: relative; /* need this to position inner content */
+  overflow-y: auto;
+
+  .content-area {
+    padding: 60px 60px;
+  }
+  agm-map { height: 300px; /* height is required */ }
+}

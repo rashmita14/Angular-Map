@@ -1,0 +1,66 @@
+.table-responsive {
+  flex: 1 1 auto;
+  position: relative;
+  width: 100%;
+}
+#maps {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+width: 100%;
+}
+
+#maps td, #maps th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#maps tr:nth-child(even){background-color: #f2f2f2;}
+
+#maps tr:hover {background-color: #ddd;}
+
+#maps th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+.display-map {
+  width:100%;
+}
+agm-map { height: 300px; /* height is required */ }
+
+* {box-sizing: border-box;}
+
+
+
+.search-container {
+  padding-bottom: 10px;
+}
+
+.search-container input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 200px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+.row-class {
+  cursor: pointer;
+}
+
